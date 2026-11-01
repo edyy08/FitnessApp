@@ -29,35 +29,3 @@ fitness_app/
 └── tests/
 ```
 
-## Configurare (linie de comandă)
-
-Necesită Python 3.10+.
-
-```bash
-git clone <url-ul-repo-ului-tău>
-cd fitness_app
-python -m venv .venv
-# Windows:  .venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-pip install -r requirements.txt
-python main.py
-```
-
-## Configurare (PyCharm)
-File > Open și selectează folderul clonat fitness_app.
-
-File > Settings > Project > Python Interpreter > Add Interpreter > Add Local Interpreter > Virtualenv Environment > New, interpreter de bază Python 3.10+.
-
-Deschide requirements.txt; dă click pe Install requirements din bara notificării (sau rulează pip install -r requirements.txt în terminalul PyCharm).
-
-Dă click dreapta pe main.py > Run 'main'.
-
-## Teste
-
-```bash
-pytest
-```
-
-## Locația datelor
-Baza de date este creată la ~/.fitness_tracker/fitness.db. Setează variabila de mediu FITNESS_TRACKER_DB pentru a folosi o altă cale. Șterge fișierul pentru a reseta aplicația.
